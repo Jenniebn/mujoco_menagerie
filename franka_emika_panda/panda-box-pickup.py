@@ -85,10 +85,10 @@ def visualize_simulation():
         viewer.sync()
 
     # Lift the box by moving to the 'pickup' keyframe arm position
-    pickup_arm, pickup_gripper = get_keyframe_robot_joints(model, "pickup")
-    print("Lifting the box...")
-    for _ in move_robot(model, data, pickup_arm, steps_per_transition):
-        viewer.sync()
+    # pickup_arm, pickup_gripper = get_keyframe_robot_joints(model, "pickup")
+    # print("Lifting the box...")
+    # for _ in move_robot(model, data, pickup_arm, steps_per_transition):
+    #     viewer.sync()
 
     # Return to home position with the box
     print("Returning to home position...")
